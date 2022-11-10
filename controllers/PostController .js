@@ -52,6 +52,7 @@ export const getOnePost = async (req, res) => {
         res.status(500).json({ message: 'Post couldn\'t be found'})
     }
 }
+
 export const updatePost = async (req, res) => {
     try {
         const postId = req.params.id
@@ -70,6 +71,7 @@ export const updatePost = async (req, res) => {
         res.status(500).json({ message: 'Post couldn\'t be updated'})
     }
 }
+
 export const deletePost = async (req, res) => {
     try {
         const postId = req.params.id
